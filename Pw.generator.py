@@ -1,5 +1,5 @@
-import random   #Module that allows me to generate random values
-import string   #Module that allows me to use special characters and numbers
+import random   #Module that allows to generate random values
+import string   #Module that allows to use special characters and numbers
 
 x = string.ascii_letters + string.digits + string.punctuation
 """
@@ -22,12 +22,6 @@ def pwgen(a):
     for i in range(a):
         pw += random.choice(x) #loops function random.choice(x) which makes the characters
     return pw
-
-"""
-I had a hard time figuring out how to join the list of randomly generated characters
-together, on stacked overflow I learned how to concat the list into a single string
-using += and ''
-"""
 
 print("Your password is:", pwgen(j))
 input("Press enter to exit")
